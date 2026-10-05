@@ -2,37 +2,75 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Interactive Photo Gallery</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accessible Interactive Photo Gallery</title>
   <link rel="stylesheet" href="css/style.css">
   <script src="js/script.js" defer></script>
 </head>
-<body>
+<body onload="initializeGallery()">
 
-  <!-- Main display container -->
-  <div id="image">
-    Hover over an image below to display here.
-  </div>
+  <header>
+    <h1>Interactive Photo Gallery</h1>
+    <h2>Hover over or tab into an image below to display it in full view</h2>
+  </header>
 
-  <!-- Gallery thumbnails -->
-  <div class="gallery">
-    <img class="preview" 
-         alt="Stylized blue galaxy artwork" 
-         src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?auto=format&fit=crop&w=900&q=80" 
-         onmouseover="upDate(this)" 
-         onmouseout="unDo()">
+  <main>
+    <!-- Main Display Container -->
+    <div id="image">
+      Hover over an image below to display here.
+    </div>
 
-    <img class="preview" 
-         alt="Blooming pink lotus flower" 
-         src="https://images.unsplash.com/photo-1497250681960-ef046c08a56e?auto=format&fit=crop&w=900&q=80" 
-         onmouseover="upDate(this)" 
-         onmouseout="unDo()">
+    <!-- Gallery Thumbnails (6 Images) -->
+    <div class="gallery">
+      <img class="preview" 
+           alt="Stylized blue galaxy artwork" 
+           src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=600&q=80" 
+           onmouseover="upDate(this)" 
+           onmouseleave="unDo()"
+           onfocus="upDate(this)"
+           onblur="unDo()">
 
-    <img class="preview" 
-         alt="Misty mountain landscape" 
-         src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=900&q=80" 
-         onmouseover="upDate(this)" 
-         onmouseout="unDo()">
-  </div>
+      <img class="preview" 
+           alt="Blooming pink lotus flower" 
+           src="https://images.unsplash.com/photo-1525310072745-f49212b5ac6d?auto=format&fit=crop&w=600&q=80" 
+           onmouseover="upDate(this)" 
+           onmouseleave="unDo()"
+           onfocus="upDate(this)"
+           onblur="unDo()">
+
+      <img class="preview" 
+           alt="Misty mountain landscape" 
+           src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=600&q=80" 
+           onmouseover="upDate(this)" 
+           onmouseleave="unDo()"
+           onfocus="upDate(this)"
+           onblur="unDo()">
+
+      <img class="preview" 
+           alt="Scenic ocean waves at sunset" 
+           src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=80" 
+           onmouseover="upDate(this)" 
+           onmouseleave="unDo()"
+           onfocus="upDate(this)"
+           onblur="unDo()">
+
+      <img class="preview" 
+           alt="Lush green forest pathway" 
+           src="https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=600&q=80" 
+           onmouseover="upDate(this)" 
+           onmouseleave="unDo()"
+           onfocus="upDate(this)"
+           onblur="unDo()">
+
+      <img class="preview" 
+           alt="Golden autumn leaves on stone" 
+           src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" 
+           onmouseover="upDate(this)" 
+           onmouseleave="unDo()"
+           onfocus="upDate(this)"
+           onblur="unDo()">
+    </div>
+  </main>
 
 </body>
 </html>
